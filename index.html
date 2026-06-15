@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoraZone | Premium Football Jerseys</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">⚽ KoraZone</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Jerseys</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="cart-icon" id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</div>
+    </header>
+
+   
+    <section class="hero">
+        <h1>Wear Your Passion</h1>
+        <p>Get the latest premium quality football jerseys at the best prices.</p>
+        <a href="#products" class="hero-btn">Shop Now</a>
+    </section>
+
+    
+    <main class="container" id="products">
+        <h2 class="section-title">Trending Jerseys</h2>
+        
+         <div class="products-grid">
+            
+            <div class="product-card">
+                <img src="192ece3d8dc2714b1ae448e6af46277b.jpg" alt="Real Madrid Jersey" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Real Madrid Home Jersey</h3>
+                    <p class="product-price">399 DH</p>
+                    <button class="btn-add" onclick="addToCart('Real Madrid Home Jersey', 399)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="4db36885b28a6eca155823016090206e.webp" alt="FC Barcelona Jersey" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">FC Barcelona Classic Jersey</h3>
+                    <p class="product-price">240 DH</p>
+                    <button class="btn-add" onclick="addToCart('FC Barcelona Classic Jersey', 240)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="199985fa1500eb01ea61c3100b82f7c4.jpg" alt="Morocco National Team Jersey" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Morocco National Team Jersey</h3>
+                    <p class="product-price">299 DH</p>
+                    <button class="btn-add" onclick="addToCart('Morocco National Team Jersey', 299)">Add to Cart</button>
+                </div>
+            </div>
+              <div class="product-card">
+                <img src="argentine.jpg" alt="Argentina National Jersey" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Argentina National Team Jersey</h3>
+                    <p class="product-price">259 DH</p>
+                    <button class="btn-add" onclick="addToCart('Argentina National Team Jersey', 259)">Add to Cart</button>
+                </div>
+            </div>
+             
+            <div class="product-card">
+                <img src="Manchester United.jpg" alt="Manchester United Jersey" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Manchester United Home Jersey</h3>
+                    <p class="product-price">99 DH</p>
+                    <button class="btn-add" onclick="addToCart('Manchester United Home Jersey', 99)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Manchester City.jpg" alt="Manchester City Jersey" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Manchester City Sky Blue Jersey</h3>
+                    <p class="product-price">169 DH</p>
+                    <button class="btn-add" onclick="addToCart('Manchester City Sky Blue Jersey', 169)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Arsenal FC.jpg" alt="Arsenal Jersey" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Arsenal FC Home Jersey</h3>
+                    <p class="product-price">199 DH</p>
+                    <button class="btn-add" onclick="addToCart('Arsenal FC Home Jersey', 199)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Paris Saint-Germain.jpg" alt="PSG Jersey" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Paris Saint-Germain Jersey</h3>
+                    <p class="product-price">159 DH</p>
+                    <button class="btn-add" onclick="addToCart('Paris Saint-Germain Jersey', 159)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title">Place Your Order</h2>
+            <p class="contact-sub">Complete the form below or message us directly on WhatsApp</p>
+            
+            <div class="contact-grid">
+                <!-- Contact Info Box -->
+                <div class="contact-info-box">
+                    <h3>Quick Contact</h3>
+                    <p>📞 <strong>Phone:</strong> +212 627-684561</p>
+                    <p>✉️ <strong>Email:</strong> sales@korazone.com</p>
+                    <a href="https://wa.me/212627684561" target="_blank" class="btn-whatsapp">
+                        💬 Chat via WhatsApp
+                    </a>
+                </div>
+
+                
+                <form id="orderForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required placeholder="e.g., 0612345678">
+                    </div>
+                    <div class="form-group">
+                        <label for="details">Order Specifications</label>
+                        <textarea id="details" rows="4" required placeholder="List the jersey name, preferred size (S, M, L, XL), and delivery address..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2026 KoraZone. All Rights Reserved.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
